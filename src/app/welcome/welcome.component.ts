@@ -22,6 +22,6 @@ export class WelcomeComponent implements OnInit {
 
   goToChapterOne(clickedUser) {
     this.router.navigate(['chapter-one', clickedUser.$key]);
-  };
+  }
 
 }

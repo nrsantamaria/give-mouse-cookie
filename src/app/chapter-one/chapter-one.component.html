@@ -1,1 +1,9 @@
 <p>User Account: {{(userToDisplay | async)?.name}}</p>
+<p>Points: {{(userToDisplay | async)?.points}}</p>
+<h2>Chapter One</h2>
+<p>
+  There is a mouse in your house and he wants a cookie.
+</p>
+
+<button class="btn btn-default" (click)="goToChapterTwoA()">Give the Mouse a Cookie</button>
+<button class="btn btn-default" (click)="goToChapterTwoB()">DON'T Give the Mouse a Cookie</button>

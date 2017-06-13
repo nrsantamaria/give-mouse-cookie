@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../user.model';
-import { ActivatedRoute, Params } from '@angular/router';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { UserService } from '../user.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-chapter-one',
@@ -13,8 +14,9 @@ import { UserService } from '../user.service';
 export class ChapterOneComponent implements OnInit {
   userId: string;
   userToDisplay;
+  // userPoints = this.userToDisplay.points;
 
-  constructor(private route: ActivatedRoute, private location: Location, private userService: UserService) { }
+  constructor(private route: ActivatedRoute, private location: Location, private userService: UserService, private router: Router) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
@@ -22,5 +24,16 @@ export class ChapterOneComponent implements OnInit {
     });
     this.userToDisplay = this.userService.getUserById(this.userId);
   }
+  //
+  // updateUserPoints(userToIncrease){
+  //   // userPoints += 5;
+  //   this.userService.increasePoint(userToIncrease);
+  // }
+  goToChapterTwoA() {
+    this.router.navigate(['chapter-two-a', this.userId]);
+  }
 
+  goToChapterTwoB() {
+    this.router.navigate(['chapter-two-b', this.userId]);
+  }
 }

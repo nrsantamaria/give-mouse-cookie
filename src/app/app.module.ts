@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { NewUserComponent } from './new-user/new-user.component';
 import { ChapterOneComponent } from './chapter-one/chapter-one.component';
+import { ChapterTwoAComponent } from './chapter-two-a/chapter-two-a.component';
+import { ChapterTwoBComponent } from './chapter-two-b/chapter-two-b.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -24,7 +26,9 @@ export const firebaseConfig = {
     AppComponent,
     WelcomeComponent,
     NewUserComponent,
-    ChapterOneComponent
+    ChapterOneComponent,
+    ChapterTwoAComponent,
+    ChapterTwoBComponent
   ],
   imports: [
     BrowserModule,

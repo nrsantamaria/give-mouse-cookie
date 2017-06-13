@@ -28,5 +28,8 @@ Before running the tests make sure you are serving the app via `ng serve`.
 If you receive the following error: Error: Can't resolve 'promise-polyfill'
 Run `npm install promise-polyfill --save-exact`
 
+If you get some other weird firebase related error
+Run  `npm list`
+It will tell you what file is out of date.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

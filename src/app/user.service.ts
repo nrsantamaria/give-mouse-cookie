@@ -21,4 +21,9 @@ export class UserService {
   getUserById(userId: string) {
     return this.database.object('users/' + userId);
   }
+
+  // increasePoint(user) {
+  //   var userInFirebase = this.getUserById(user.$key);
+  //   userInFirebase.update({points: 5});
+  // }
 }
