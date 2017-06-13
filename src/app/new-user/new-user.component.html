@@ -1,0 +1,9 @@
+<h3>Enter Your Information: </h3>
+
+<div class="form-group">
+  <label>Name:</label>
+  <input class="form-control" type="text" #newName>
+  <a routerLink="">
+    <button class="btn btn-default" (click)="submitForm(newName.value); newName.value='' ">Submit</button>
+  </a>
+</div>
