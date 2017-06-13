@@ -10,6 +10,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { NewUserComponent } from './new-user/new-user.component';
+import { ChapterOneComponent } from './chapter-one/chapter-one.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -22,7 +23,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     WelcomeComponent,
-    NewUserComponent
+    NewUserComponent,
+    ChapterOneComponent
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,7 @@
      <th>Points</th>
    </tr>
   </thead>
-  <tbody *ngFor="let user of users | async">
+  <tbody *ngFor="let user of users | async" (click)="goToChapterOne(user)">
      <tr>
        <td>{{user.name}}</td>
        <td>{{user.points}}</td>
