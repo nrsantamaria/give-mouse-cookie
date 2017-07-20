@@ -1,35 +1,61 @@
 # GiveMouseCookie
-
+## By Asia Kane and Nicole Santamaria
+## Description
+A story telling game based on the book if you give a mouse a cookie.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+
+## Prerequisites
+
+You will need the following things properly installed on your computer.
+
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with NPM)
+* [AngularCLI](https://cli.angular.io/)
+* [(src/assets/images/firebase.png)](https://firebase.google.com/)
+
+## Installation
+
+* `git clone https://github.com/nrsantamaria/give-mouse-cookie`
+* `cd give-mouse-cookie`
+* `npm install`
+* `bower install bootstrap --save`
+
+## Firebase Integration
+
+* Create a firebase account at `https://firebase.google.com`
+* Add a new project to your firebase account
+* Create a file in the app folder labeled api-keys.ts
+* Add the following to your api-keys file:
+
+```
+export var masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };
+```
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Useful Tips
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+* To review content in atom with TypeScript Package install the following:
+* `apm install atom-typescript`
 
-## Build
+* If you receive the following error: Error: Can't resolve 'promise-polyfill'
+* Run `npm install promise-polyfill --save-exact`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* If you get some other weird firebase related error use the following to find out what file is out of date.
+* Run `npm list`
 
-## Running unit tests
+## Support and Contact Details
+* Please contact Nicole Santamaria at NicoleRSantamaria@gmail.com if you have any questions.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## License
+This software is licensed under MIT license.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-If you receive the following error: Error: Can't resolve 'promise-polyfill'
-Run `npm install promise-polyfill --save-exact`
-
-If you get some other weird firebase related error
-Run  `npm list`
-It will tell you what file is out of date.
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright (c) 2017 Nicole Santamaria
